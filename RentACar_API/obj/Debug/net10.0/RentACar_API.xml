@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RentACar_API</name>
+    </assembly>
+    <members>
+        <member name="M:RentACar_API.Controllers.BranchesController.GetBranches">
+            <summary>
+            Get all branches.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.BranchesController.GetBranch(System.Int32)">
+            <summary>
+            Get branch by id.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.BranchesController.CreateBranch(RentACar_API.Models.BranchForCreation)">
+            <summary>
+            Create a new branch. Authentication is required.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.BranchesController.UpdateBranch(System.Int32,RentACar_API.Models.BranchForUpdate)">
+            <summary>
+            Update an existing branch. Authentication is required.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.BranchesController.DeleteBranch(System.Int32)">
+            <summary>
+            Delete a branch. Authentication is required.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.CustomersController.GetCustomers">
+            <summary>
+            Get all customers.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.CustomersController.GetCustomer(System.Int32)">
+            <summary>
+            Get customer by id.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.CustomersController.GetCustomerVehicles(System.Int32)">
+            <summary>
+            Get all vehicles rented previously or currently by a customer.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.CustomersController.CreateCustomer(RentACar_API.Models.CustomerForCreation)">
+            <summary>
+            Create a new customer. Authentication is required.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.CustomersController.UpdateCustomer(System.Int32,RentACar_API.Models.CustomerForUpdate)">
+            <summary>
+            Update an existing customer. Authentication is required.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.CustomersController.DeleteCustomer(System.Int32)">
+            <summary>
+            Delete a customer. Authentication is required.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.EmployeesController.GetEmployees">
+            <summary>
+            Get all employees.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.EmployeesController.GetEmployee(System.Int32)">
+            <summary>
+            Get employee by id.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.EmployeesController.CreateEmployee(RentACar_API.Models.EmployeeForCreation)">
+            <summary>
+            Create a new employee. Authentication is required.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.EmployeesController.UpdateEmployee(System.Int32,RentACar_API.Models.EmployeeForUpdate)">
+            <summary>
+            Update an existing employee. Authentication is required.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.EmployeesController.DeleteEmployee(System.Int32)">
+            <summary>
+            Delete an employee. Authentication is required.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.LoginController.Login(RentACar_API.Models.LoginModel)">
+            <summary>
+            Login using the user name and password stored in appsettings.json and return JWT token.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.PaymentsController.GetPayments">
+            <summary>
+            Get all payments.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.PaymentsController.GetPayment(System.Int32)">
+            <summary>
+            Get payment by id.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.PaymentsController.GetRevenue(System.DateTime,System.DateTime)">
+            <summary>
+            Calculate company revenue from payments within a date range.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.PaymentsController.CreatePayment(RentACar_API.Models.PaymentForCreation)">
+            <summary>
+            Create a new payment. Authentication is required.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.PaymentsController.UpdatePayment(System.Int32,RentACar_API.Models.PaymentForUpdate)">
+            <summary>
+            Update an existing payment. Authentication is required.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.PaymentsController.DeletePayment(System.Int32)">
+            <summary>
+            Delete a payment. Authentication is required.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.VehiclesController.GetVehicles">
+            <summary>
+            Get all vehicles.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.VehiclesController.GetVehicle(System.Int32)">
+            <summary>
+            Get vehicle by id.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.VehiclesController.GetRentedVehicles(System.DateTime,System.DateTime)">
+            <summary>
+            Get all vehicles rented within a date range.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.VehiclesController.CreateVehicle(RentACar_API.Models.VehicleForCreation)">
+            <summary>
+            Create a new vehicle. Authentication is required.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.VehiclesController.UpdateVehicle(System.Int32,RentACar_API.Models.VehicleForUpdate)">
+            <summary>
+            Update an existing vehicle. Authentication is required.
+            </summary>
+        </member>
+        <member name="M:RentACar_API.Controllers.VehiclesController.DeleteVehicle(System.Int32)">
+            <summary>
+            Delete a vehicle. Authentication is required.
+            </summary>
+        </member>
+        <member name="T:Program">
+            <summary>
+            Auto-generated public partial Program class for top-level statement apps.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.OpenApi.Generated.DocumentationCommentIdHelper.CreateDocumentationId(System.Type)">
+            <summary>
+            Generates a documentation comment ID for a type.
+            Example: T:Namespace.Outer+Inner`1 becomes T:Namespace.Outer.Inner`1
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.OpenApi.Generated.DocumentationCommentIdHelper.CreateDocumentationId(System.Reflection.PropertyInfo)">
+            <summary>
+            Generates a documentation comment ID for a property.
+            Example: P:Namespace.ContainingType.PropertyName or for an indexer P:Namespace.ContainingType.Item(System.Int32)
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.OpenApi.Generated.DocumentationCommentIdHelper.CreateDocumentationId(System.Type,System.String)">
+            <summary>
+            Generates a documentation comment ID for a property given its container type and property name.
+            Example: P:Namespace.ContainingType.PropertyName
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.OpenApi.Generated.DocumentationCommentIdHelper.CreateDocumentationId(System.Reflection.MethodInfo)">
+            <summary>
+            Generates a documentation comment ID for a method (or constructor).
+            For example:
+              M:Namespace.ContainingType.MethodName(ParamType1,ParamType2)~ReturnType
+              M:Namespace.ContainingType.#ctor(ParamType)
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.OpenApi.Generated.DocumentationCommentIdHelper.GetTypeDocId(System.Type,System.Boolean,System.Boolean)">
+            <summary>
+            Generates a documentation ID string for a type.
+            This method handles nested types (replacing '+' with '.'),
+            generic types, arrays, pointers, by-ref types, and generic parameters.
+            The <paramref name="includeGenericArguments"/> flag controls whether
+            constructed generic type arguments are emitted, while <paramref name="omitGenericArity"/>
+            controls whether the generic arity marker (e.g. "`1") is appended.
+            </summary>
+        </member>
+        <member name="M:Microsoft.AspNetCore.OpenApi.Generated.DocumentationCommentIdHelper.NormalizeDocId(System.String)">
+            <summary>
+            Normalizes a documentation comment ID to match the compiler-style format.
+            Strips the return type suffix for ordinary methods but retains it for conversion operators.
+            </summary>
+            <param name="docId">The documentation comment ID to normalize.</param>
+            <returns>The normalized documentation comment ID.</returns>
+        </member>
+    </members>
+</doc>

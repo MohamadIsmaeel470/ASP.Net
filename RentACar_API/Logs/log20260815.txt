@@ -1,0 +1,86 @@
+2026-08-15 21:20:21.046 +03:00 [INF] User profile is available. Using 'C:\Users\modern tech\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-08-15 21:20:21.163 +03:00 [INF] Creating key {0d88d7fc-9ae4-4fb2-90af-3967f36c23cf} with creation date 2026-08-15 18:20:21Z, activation date 2026-08-15 18:20:21Z, and expiration date 2026-11-13 18:20:21Z.
+2026-08-15 21:20:21.179 +03:00 [INF] Writing data to file 'C:\Users\modern tech\AppData\Local\ASP.NET\DataProtection-Keys\key-0d88d7fc-9ae4-4fb2-90af-3967f36c23cf.xml'.
+2026-08-15 21:20:21.414 +03:00 [INF] Now listening on: https://localhost:7107
+2026-08-15 21:20:21.417 +03:00 [INF] Now listening on: http://localhost:5195
+2026-08-15 21:20:21.470 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-08-15 21:20:21.472 +03:00 [INF] Hosting environment: Development
+2026-08-15 21:20:21.474 +03:00 [INF] Content root path: D:\full-stack\API\RentACar_API_Final\RentACar_API
+2026-08-15 21:20:22.820 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7107/ - null null
+2026-08-15 21:20:23.576 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7107/ - 404 null null 774.2737ms
+2026-08-15 21:20:23.586 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7107/, Response status code: 404
+2026-08-15 21:27:32.771 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7107/api/login
+https://localhost:7107/api/login - application/json 54
+2026-08-15 21:27:32.786 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7107/api/login
+https://localhost:7107/api/login - 404 0 null 17.1273ms
+2026-08-15 21:27:32.797 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7107/api/login%0Ahttps://localhost:7107/api/login, Response status code: 404
+2026-08-15 21:27:41.747 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7107/api/login
+https://localhost:7107/api/login - application/json 54
+2026-08-15 21:27:41.761 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7107/api/login
+https://localhost:7107/api/login - 404 0 null 13.9279ms
+2026-08-15 21:27:41.765 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: POST https://localhost:7107/api/login%0Ahttps://localhost:7107/api/login, Response status code: 404
+2026-08-15 21:29:18.435 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7107/api/login - application/json 54
+2026-08-15 21:29:18.443 +03:00 [INF] Executing endpoint 'RentACar_API.Controllers.LoginController.Login (RentACar_API)'
+2026-08-15 21:29:18.519 +03:00 [INF] Route matched with {action = "Login", controller = "Login"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(RentACar_API.Models.LoginModel) on controller RentACar_API.Controllers.LoginController (RentACar_API).
+2026-08-15 21:29:18.621 +03:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType1`1[[System.String, System.Private.CoreLib, Version=10.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-08-15 21:29:18.638 +03:00 [INF] Executed action RentACar_API.Controllers.LoginController.Login (RentACar_API) in 110.609ms
+2026-08-15 21:29:18.641 +03:00 [INF] Executed endpoint 'RentACar_API.Controllers.LoginController.Login (RentACar_API)'
+2026-08-15 21:29:18.643 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7107/api/login - 200 null application/json; charset=utf-8 207.8001ms
+2026-08-15 21:37:03.774 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7107/api/customers - application/json 172
+2026-08-15 21:37:03.855 +03:00 [INF] Executing endpoint 'RentACar_API.Controllers.CustomersController.CreateCustomer (RentACar_API)'
+2026-08-15 21:37:03.876 +03:00 [INF] Route matched with {action = "CreateCustomer", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[RentACar_API.Models.CustomerDto]] CreateCustomer(RentACar_API.Models.CustomerForCreation) on controller RentACar_API.Controllers.CustomersController (RentACar_API).
+2026-08-15 21:37:07.936 +03:00 [INF] Executed DbCommand (81ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customer] ([DOB], [Email], [FirstName], [LasttName], [LicenseNumber], [Phone])
+OUTPUT INSERTED.[CustomerID]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2026-08-15 21:37:08.043 +03:00 [INF] Executing CreatedAtRouteResult, writing value of type 'RentACar_API.Models.CustomerDto'.
+2026-08-15 21:37:08.082 +03:00 [INF] Executed action RentACar_API.Controllers.CustomersController.CreateCustomer (RentACar_API) in 4204.2187ms
+2026-08-15 21:37:08.084 +03:00 [INF] Executed endpoint 'RentACar_API.Controllers.CustomersController.CreateCustomer (RentACar_API)'
+2026-08-15 21:37:08.095 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7107/api/customers - 201 null application/json; charset=utf-8 4321.499ms
+2026-08-15 21:37:53.411 +03:00 [INF] Request starting HTTP/2 POST https://localhost:7107/api/customers - application/json 178
+2026-08-15 21:37:53.414 +03:00 [INF] Executing endpoint 'RentACar_API.Controllers.CustomersController.CreateCustomer (RentACar_API)'
+2026-08-15 21:37:53.416 +03:00 [INF] Route matched with {action = "CreateCustomer", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[RentACar_API.Models.CustomerDto]] CreateCustomer(RentACar_API.Models.CustomerForCreation) on controller RentACar_API.Controllers.CustomersController (RentACar_API).
+2026-08-15 21:37:53.506 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[@p0='?' (DbType = DateTime2), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Customer] ([DOB], [Email], [FirstName], [LasttName], [LicenseNumber], [Phone])
+OUTPUT INSERTED.[CustomerID]
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5);
+2026-08-15 21:37:53.509 +03:00 [INF] Executing CreatedAtRouteResult, writing value of type 'RentACar_API.Models.CustomerDto'.
+2026-08-15 21:37:53.511 +03:00 [INF] Executed action RentACar_API.Controllers.CustomersController.CreateCustomer (RentACar_API) in 92.3628ms
+2026-08-15 21:37:53.512 +03:00 [INF] Executed endpoint 'RentACar_API.Controllers.CustomersController.CreateCustomer (RentACar_API)'
+2026-08-15 21:37:53.514 +03:00 [INF] Request finished HTTP/2 POST https://localhost:7107/api/customers - 201 null application/json; charset=utf-8 102.4729ms
+2026-08-15 21:38:39.394 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7107/api/customers - application/json 178
+2026-08-15 21:38:39.397 +03:00 [INF] Executing endpoint 'RentACar_API.Controllers.CustomersController.GetCustomers (RentACar_API)'
+2026-08-15 21:38:39.410 +03:00 [INF] Route matched with {action = "GetCustomers", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[RentACar_API.Models.CustomerDto]]] GetCustomers() on controller RentACar_API.Controllers.CustomersController (RentACar_API).
+2026-08-15 21:38:39.756 +03:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [c].[CustomerID], [c].[DOB], [c].[Email], [c].[FirstName], [c].[LasttName], [c].[LicenseNumber], [c].[Phone]
+FROM [Customer] AS [c]
+2026-08-15 21:38:39.790 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RentACar_API.Models.CustomerDto, RentACar_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-15 21:38:39.792 +03:00 [INF] Executed action RentACar_API.Controllers.CustomersController.GetCustomers (RentACar_API) in 379.128ms
+2026-08-15 21:38:39.794 +03:00 [INF] Executed endpoint 'RentACar_API.Controllers.CustomersController.GetCustomers (RentACar_API)'
+2026-08-15 21:38:39.796 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7107/api/customers - 200 null application/json; charset=utf-8 401.792ms
+2026-08-15 21:39:13.072 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7107/api/customers/1 - application/json 178
+2026-08-15 21:39:13.076 +03:00 [INF] Executing endpoint 'RentACar_API.Controllers.CustomersController.GetCustomer (RentACar_API)'
+2026-08-15 21:39:13.096 +03:00 [INF] Route matched with {action = "GetCustomer", controller = "Customers"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[RentACar_API.Models.CustomerDto]] GetCustomer(Int32) on controller RentACar_API.Controllers.CustomersController (RentACar_API).
+2026-08-15 21:39:13.251 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@id='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [c].[CustomerID], [c].[DOB], [c].[Email], [c].[FirstName], [c].[LasttName], [c].[LicenseNumber], [c].[Phone]
+FROM [Customer] AS [c]
+WHERE [c].[CustomerID] = @id
+2026-08-15 21:39:13.256 +03:00 [INF] Executing OkObjectResult, writing value of type 'RentACar_API.Models.CustomerDto'.
+2026-08-15 21:39:13.258 +03:00 [INF] Executed action RentACar_API.Controllers.CustomersController.GetCustomer (RentACar_API) in 159.5423ms
+2026-08-15 21:39:13.260 +03:00 [INF] Executed endpoint 'RentACar_API.Controllers.CustomersController.GetCustomer (RentACar_API)'
+2026-08-15 21:39:13.260 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7107/api/customers/1 - 200 null application/json; charset=utf-8 188.6996ms
+2026-08-15 21:39:44.605 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7107/api/branches - application/json 178
+2026-08-15 21:39:44.608 +03:00 [INF] Executing endpoint 'RentACar_API.Controllers.BranchesController.GetBranches (RentACar_API)'
+2026-08-15 21:39:44.621 +03:00 [INF] Route matched with {action = "GetBranches", controller = "Branches"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[RentACar_API.Models.BranchDto]]] GetBranches() on controller RentACar_API.Controllers.BranchesController (RentACar_API).
+2026-08-15 21:39:44.745 +03:00 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[BranchID], [b].[AddressID], [b].[City], [b].[Email], [b].[EmployeeID], [b].[Name], [b].[Phone], [b].[VehicleID], [a].[AddressID], [a].[City], [a].[Stret]
+FROM [Branch] AS [b]
+INNER JOIN [Address] AS [a] ON [b].[AddressID] = [a].[AddressID]
+2026-08-15 21:39:44.792 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[RentACar_API.Models.BranchDto, RentACar_API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-08-15 21:39:44.798 +03:00 [INF] Executed action RentACar_API.Controllers.BranchesController.GetBranches (RentACar_API) in 173.0423ms
+2026-08-15 21:39:44.799 +03:00 [INF] Executed endpoint 'RentACar_API.Controllers.BranchesController.GetBranches (RentACar_API)'
+2026-08-15 21:39:44.800 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7107/api/branches - 200 null application/json; charset=utf-8 195.0971ms

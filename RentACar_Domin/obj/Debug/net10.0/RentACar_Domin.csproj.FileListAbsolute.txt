@@ -1,0 +1,11 @@
+D:\full-stack\API\RentACar_API_Final\RentACar_Domin\bin\Debug\net10.0\RentACar_Domin.deps.json
+D:\full-stack\API\RentACar_API_Final\RentACar_Domin\bin\Debug\net10.0\RentACar_Domin.dll
+D:\full-stack\API\RentACar_API_Final\RentACar_Domin\bin\Debug\net10.0\RentACar_Domin.pdb
+D:\full-stack\API\RentACar_API_Final\RentACar_Domin\obj\Debug\net10.0\RentACar_Domin.GeneratedMSBuildEditorConfig.editorconfig
+D:\full-stack\API\RentACar_API_Final\RentACar_Domin\obj\Debug\net10.0\RentACar_Domin.AssemblyInfoInputs.cache
+D:\full-stack\API\RentACar_API_Final\RentACar_Domin\obj\Debug\net10.0\RentACar_Domin.AssemblyInfo.cs
+D:\full-stack\API\RentACar_API_Final\RentACar_Domin\obj\Debug\net10.0\RentACar_Domin.csproj.CoreCompileInputs.cache
+D:\full-stack\API\RentACar_API_Final\RentACar_Domin\obj\Debug\net10.0\RentACar_Domin.dll
+D:\full-stack\API\RentACar_API_Final\RentACar_Domin\obj\Debug\net10.0\refint\RentACar_Domin.dll
+D:\full-stack\API\RentACar_API_Final\RentACar_Domin\obj\Debug\net10.0\RentACar_Domin.pdb
+D:\full-stack\API\RentACar_API_Final\RentACar_Domin\obj\Debug\net10.0\ref\RentACar_Domin.dll

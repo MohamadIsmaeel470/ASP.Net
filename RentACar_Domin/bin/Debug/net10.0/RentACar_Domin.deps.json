@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "RentACar_Domin/1.0.0": {
+        "runtime": {
+          "RentACar_Domin.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "RentACar_Domin/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

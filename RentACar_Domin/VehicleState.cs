@@ -1,0 +1,1 @@
+﻿public enum VehicleState { Available , Rented , Maintenance , OutOfService}
